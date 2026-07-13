@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background: #D4AF37;
+  color: #0A0A0A;
+}
+
+body {
+  background-color: #0A0A0A;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+.gold-text {
+  color: #D4AF37;
+}
+
+.gold-btn {
+  background-image: linear-gradient(135deg, #D4AF37 0%, #F5D577 50%, #D4AF37 100%);
+  color: #0A0A0A;
+  font-weight: 700;
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+.gold-btn:hover {
+  filter: brightness(1.08);
+}
+.gold-btn:active {
+  transform: scale(0.98);
+}
+
+.outline-btn {
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.outline-btn:hover {
+  background-color: #D4AF37;
+  color: #0A0A0A;
+}
+
+.panel {
+  background-color: #141414;
+  border: 1px solid #262620;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 2px;
+}
