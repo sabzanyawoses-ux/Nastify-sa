@@ -74,3 +74,4 @@ account, saved listings, and booking history are identical on both.
 - Listing photos: the form currently accepts a photo URL. If you want
   direct photo uploads from a phone, that needs Supabase Storage wired in
   — say the word and I'll add it.
+ 
